@@ -6,12 +6,12 @@ Business logic for the watchlist feature.
 
 from app import db
 from models import Film, WatchlistEntry
-from services.collection_service import AlreadyInCollectionError, FilmNotFoundError
+from services.collection_service import FilmNotFoundError
 
 
 
 class AlreadyInWatchlistError(Exception):
-    """Raised when a film is already in the user's collection."""
+    """Raised when a film is already in the user's watchlist."""
     pass
 
 
